@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import Persona
+from .models import Oferente
 
 
 def inicio(request):
-    personas = Persona.objects.all()
+    personas = Oferente.objects.all()
     contexto = {
         'personas': personas
     }
