@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from aplicacion.appReciclapp.views import inicio
+from aplicacion.appReciclapp.views import inicio, publicar
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', inicio, name='index')
+    path('', inicio, name='index'),
+    path('publicar/',publicar),
 ]
